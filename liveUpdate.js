@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     displayUserInputInfo();
 
     function displayUserInputInfo() {
+
         const userDateTimeString = localStorage.getItem('userDateTimeString');
         const meetingPlace = localStorage.getItem('meetingPlace');
 

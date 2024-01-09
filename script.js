@@ -23,7 +23,9 @@ function calculateTime() {
 
 
   const userInput = `${dateInput.value} ${timeInput.value}`;
+
   localStorage.setItem('meetingPlace', placeInput);
+  localStorage.setItem('userDateTimeString', userInput);
 
 
   const futureDate = new Date(userInput);
