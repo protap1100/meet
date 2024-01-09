@@ -44,19 +44,6 @@ function calculateTime() {
 }
 
 
-function calculateTime() {
-  const dateInput = document.getElementById("dateInput").value;
-  const timeInput = document.getElementById("timeInput").value;
-  const placeInput = document.getElementById("place").value;
-  
-  const userInput = `${dateInput} ${timeInput}`;
-
-  localStorage.setItem('userDateTimeString', userInput);
-  localStorage.setItem('meetingPlace', placeInput);
-
-
-  window.location.href = 'result.html';
-}
 
 
 
