@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" ></script>
+    <script src="liveUpdate.js" ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-yes">
+      <div>
+        <h3 class="header_text">Yeeyy! Lesgooo.</h3>
+        <h1 class="header_text">Kobe dekha korben? &#x1F607;</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div>
+        <form id="datetimeForm">
+          <label for="dateInput">Date:</label>
+          <input type="date" id="dateInput" required>
+          <br>
+          <label for="timeInput">Time:</label>
+          <input type="time" id="timeInput" required>
+          <br>
+          <label for="place">Metting Place:</label>
+          <input type="text" id="place" required>
+          <label for=""></label>
+          <input type="button" onclick="calculateTime()" class="btn" value="Set Time">
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
