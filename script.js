@@ -18,6 +18,7 @@ function nextPage() {
 function calculateTime() {
   const dateInput = document.getElementById("dateInput");
   const timeInput = document.getElementById("timeInput");
+  const placeInput = document.getElementById("place").value;
 
   const userInput = `${dateInput.value} ${timeInput.value}`;
 
@@ -42,7 +43,6 @@ function calculateTime() {
       window.location.href = 'result.html';
   }
 }
-
 
 
 
