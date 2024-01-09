@@ -19,6 +19,7 @@ function calculateTime() {
   const dateInput = document.getElementById("dateInput");
   const timeInput = document.getElementById("timeInput");
   const placeInput = document.getElementById("place").value;
+  const warrning = document.getElementById("warrning");
 
 
   const userInput = `${dateInput.value} ${timeInput.value}`;
@@ -29,7 +30,7 @@ function calculateTime() {
   const currentDate = new Date();
 
   if (futureDate <= currentDate) {
-      alert("Please choose a date and time ahead of the current date and time.");
+      warrning.innerHTML ="Ei Date tw chole geche ahmmm chalaki kore chole jawa date select koren";
   } else {
       const timeDifference = futureDate - currentDate;
 

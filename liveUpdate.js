@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const updatedSeconds = localStorage.getItem('remainingSeconds');
 
     const timeRemaining = document.getElementById("timeRemaining");
-    timeRemaining.innerHTML = `Remaining Time: ${updatedDays} days, ${updatedHours} hours, and ${updatedMinutes} minutes`;
+    timeRemaining.innerHTML = `Remaining Time: ${updatedDays} days, ${updatedHours} hours, ${updatedMinutes} minutes, and ${updatedSeconds} seconds `;
 
     displayUserInputInfo();
 
