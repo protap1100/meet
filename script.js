@@ -20,7 +20,10 @@ function calculateTime() {
   const timeInput = document.getElementById("timeInput");
   const placeInput = document.getElementById("place").value;
 
+
   const userInput = `${dateInput.value} ${timeInput.value}`;
+  localStorage.setItem('meetingPlace', placeInput);
+
 
   const futureDate = new Date(userInput);
   const currentDate = new Date();
@@ -43,6 +46,7 @@ function calculateTime() {
       window.location.href = 'result.html';
   }
 }
+
 
 
 
